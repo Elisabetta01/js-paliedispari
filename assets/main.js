@@ -1,6 +1,3 @@
-// Palindroma
-// Chiedere all’utente di inserire una parola. Creare una funzione per capire se la parola inserita è palindroma
-
 // Pari e Dispari
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
@@ -51,6 +48,20 @@ function numeroRandom(min, max){
 let sceltaUtente = document.getElementById('pari').checked || document.getElementById('dispari').checked;
 console.log(sceltaUtente)
 
+
+// Palindroma
+// Chiedere all’utente di inserire una parola. Creare una funzione per capire se la parola inserita è palindroma
+
+// chiedo la parola
+function checkParola(){
+     let parola = document.getElementById('parola').value
+
+     console.log(parola)
+}
+
+for(let i=0; i < parola.length; i++){
+     
+}
 
 
 
