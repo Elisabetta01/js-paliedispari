@@ -53,15 +53,30 @@ console.log(sceltaUtente)
 // Chiedere all’utente di inserire una parola. Creare una funzione per capire se la parola inserita è palindroma
 
 // chiedo la parola
-function checkParola(){
-     let parola = document.getElementById('parola').value
+let parola = prompt('scrivi una parola')
+console.log(parola)
 
-     console.log(parola)
+
+function ruotaParola(parola){
+     let parolaRibaltata = ''
+
+     for(let i = parola.length -1; i >= 0; i--){
+          parolaRibaltata += parola[i]
+     }
+
+     return parolaRibaltata
 }
 
-for(let i=0; i < parola.length; i++){
+let parolaReverse = ruotaParola(parola);
+
+if( parola == parolaReverse ){
+
+     console.log(`La parola: ${parola} è palindroma`)
+}else {
+     console.log(`La parola: ${parola} non è palindroma`)
      
 }
+
 
 
 
